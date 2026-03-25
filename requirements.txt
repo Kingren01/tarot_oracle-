@@ -5,3 +5,4 @@ requests
 crewai[litellm,tools]==1.11.0
 pydantic
 python-dotenv
+fpdf2
