@@ -1,6 +1,10 @@
 import streamlit as st
+import sys
 import os
 from dotenv import load_dotenv
+
+# Ensure the 'src' directory is in the python path for deployment
+sys.path.append(os.path.join(os.path.dirname(__file__), "src"))
 
 load_dotenv()
 
