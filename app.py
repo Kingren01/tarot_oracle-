@@ -16,7 +16,13 @@ st.set_page_config(
 )
 
 if not os.getenv("OPENAI_API_KEY") and not os.getenv("OPENROUTER_API_KEY"):
-    st.error("⚠️ **OpenRouter API Key not configured.** Please add `OPENROUTER_API_KEY` to your `.env` file.")
+    st.error("""
+    ⚠️ **API Configuration Missing**
+    
+    The Oracle requires an API key to function. Please:
+    1. **Local**: Add `OPENROUTER_API_KEY` or `OPENAI_API_KEY` to your `.env` file.
+    2. **Streamlit Cloud**: Add your keys under **Settings > Secrets** in the Streamlit dashboard.
+    """)
     st.stop()
 
 from utils.styles import apply_global_styles, get_theme
