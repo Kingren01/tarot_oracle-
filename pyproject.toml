@@ -1,0 +1,24 @@
+[project]
+name = "life_sciences_competitive_intelligence_multi_format_export_automation"
+version = "0.1.0"
+description = "life_sciences_competitive_intelligence_multi_format_export_automation using crewAI"
+authors = [{ name = "Your Name", email = "you@example.com" }]
+requires-python = ">=3.10,<=3.15"
+dependencies = [
+    "crewai[litellm,tools]==1.11.0",
+]
+
+[project.scripts]
+life_sciences_competitive_intelligence_multi_format_export_automation = "life_sciences_competitive_intelligence_multi_format_export_automation.main:run"
+run_crew = "life_sciences_competitive_intelligence_multi_format_export_automation.main:run"
+train = "life_sciences_competitive_intelligence_multi_format_export_automation.main:train"
+replay = "life_sciences_competitive_intelligence_multi_format_export_automation.main:replay"
+test = "life_sciences_competitive_intelligence_multi_format_export_automation.main:test"
+run_with_trigger = "life_sciences_competitive_intelligence_multi_format_export_automation.main:run_with_trigger"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.crewai]
+type = "crew"

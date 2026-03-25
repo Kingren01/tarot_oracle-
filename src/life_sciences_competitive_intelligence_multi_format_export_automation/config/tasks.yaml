@@ -1,0 +1,483 @@
+---
+verified_intelligence_research_target_account_competitor_analysis:
+  description: |-
+    **IMPORTANT: File Upload Processing Instructions**
+    If files are provided by the user, read and analyze them FIRST using the FileReadTool before conducting any external research. Look for file attachments that may contain:
+    - Target account data (company profiles, financial info, organizational charts)
+    - Competitor intelligence (service contracts, performance data, engagement details)
+    - Market research (benchmarks, industry reports, competitive analysis)
+
+    **Primary Research Task:**
+    Conduct comprehensive, fact-based research on {target_account} and their relationship with {competitor_name}. All research must be verified and sourced. Investigate:
+
+    **Target Account Analysis (Life Sciences/GCC/Research Institute):**
+    - Company profile: type (pharma, biotech, GCC, research), size, revenue, employee count
+    - Current strategic priorities and business challenges
+    - Technology stack and digital transformation initiatives
+    - Financial performance (latest available data with sources)
+    - Organizational structure: key departments, decision-making hierarchy
+    - Key stakeholders and decision makers
+
+    **Competitor Engagement Details:**
+    - Current projects and scope of engagement with {competitor_name}
+    - Duration, timeline, and contract value (if publicly available)
+    - Key personnel involved from both organizations
+    - Service areas: technology, consulting, implementation, support
+    - Recent developments, press releases, or public information
+
+    **Pain Points Identification:**
+    - Documented operational challenges and inefficiencies
+    - Technology gaps and infrastructure limitations
+    - Process bottlenecks affecting productivity
+    - Market pressures and competitive disadvantages
+
+    **Market Context & Benchmarks:**
+    - Industry challenges specific to Life Sciences/research sector
+    - Technology adoption trends and digital transformation pressure
+    - Competitive landscape and market positioning
+
+    **Critical Requirement:** All data points, metrics, and claims must be verifiable through reliable sources. Cite all sources and indicate when information is not publicly available.
+  expected_output: |-
+    **VERIFIED INTELLIGENCE REPORT**
+    Comprehensive analysis containing:
+
+    **1. Target Account Profile (Verified Data Only)**
+    - Organization type, size, revenue, employee count (with sources)
+    - Current strategic priorities and documented challenges
+    - Technology infrastructure and transformation initiatives
+    - Financial performance metrics (with source references)
+    - Organizational structure and key stakeholders
+
+    **2. Competitor Engagement Details**
+    - Documented relationship scope, duration, and contract details
+    - Key personnel and project involvement (where publicly available)
+    - Service delivery areas and engagement timeline
+    - Recent developments and public announcements
+
+    **3. Pain Points Analysis**
+    - Documented operational challenges and technology gaps
+    - Market pressures and competitive dynamics
+    - Digital transformation obstacles and requirements
+
+    **4. Market Benchmarks**
+    - Industry-specific performance metrics and standards
+    - Competitive positioning against peer organizations
+    - Technology adoption benchmarks for similar organizations
+
+    **5. Data Verification Summary**
+    - Complete list of sources and references used
+    - Identification of data gaps or unverifiable claims
+    - Confidence levels for different data points
+  agent: life_sciences_intelligence_data_verification_specialist
+validated_gap_analysis_infrastructure_service_delivery_assessment:
+  description: "Analyze verified gaps in {competitor_name}'s service delivery at {target_account}
+    using only documented evidence. Focus on factual, verifiable pain points and avoid
+    speculation. \n\n**Analysis Framework:**\n- Use data from the verified intelligence
+    report as primary input\n- Cross-reference with industry benchmarks and documented
+    case studies\n- Identify specific, measurable gaps with evidence backing\n\n**Key
+    Areas to Investigate:**\n- **Data Integration Challenges**: Documented silos,
+    ETL issues, integration delays\n- **Technology Infrastructure**: Legacy systems,
+    performance bottlenecks, scalability limits  \n- **Service Delivery Issues**:
+    Cost overruns, timeline delays, quality problems\n- **Organizational Pain Points**:
+    Process inefficiencies, resource constraints, change management\n- **Market Competitive
+    Pressures**: Time-to-market delays, innovation gaps\n\n**Validation Requirements:**\n-
+    Each identified gap must be supported by verifiable evidence\n- Pain points must
+    be specific to the target organization's documented challenges\n- Market benchmarks
+    must reference credible industry sources\n- When evidence is limited, clearly
+    state the constraint"
+  expected_output: |-
+    **VALIDATED GAP ANALYSIS REPORT**
+
+    **1. Documented Infrastructure Gaps (Evidence-Based)**
+    - Specific technology and data integration challenges with supporting evidence
+    - Performance bottlenecks and scalability limitations (with metrics where available)
+    - Legacy system constraints affecting business operations
+
+    **2. Service Delivery Pain Points**
+    - Documented project delays, cost overruns, or performance issues
+    - Resource allocation and expertise gaps
+    - Change management and adoption challenges
+
+    **3. Organizational Structure Impact**
+    - Department-specific technology needs and gaps
+    - Decision-making bottlenecks and process inefficiencies
+    - Skills gaps and training requirements
+
+    **4. Market Benchmark Comparison**
+    - Verified industry standards and peer performance metrics
+    - Competitive positioning gaps (with credible sources)
+    - Time-to-market and innovation velocity comparisons
+
+    **5. Evidence Summary**
+    - Primary sources for each identified gap
+    - Data reliability assessment and confidence levels
+    - Areas requiring additional validation or investigation
+
+    **6. Displacement Opportunity Assessment**
+    - Priority gaps suitable for technology solutions
+    - Quantified impact potential (where data supports calculation)
+    - Risk factors and implementation considerations
+  agent: verified_gap_analysis_pain_point_specialist
+  context:
+  - verified_intelligence_research_target_account_competitor_analysis
+apply_the_agilisium_angle_map_proprietary_accelerators:
+  description: |-
+    Apply the Agilisium Angle: Select at least one Agilisium accelerator (e.g., Cloud Migration Accelerator or Data Warehouse Modernization) to solve each identified gap. Focus on:
+
+    **NextGen DataOps Platform Solutions:**
+    - **GenInsights**: Replace static BI with self-service analytics
+    - **Data Vigor**: Provide real-time data observability and monitoring
+    - **Gene Inspector**: For Omics and genomics data analysis (if applicable)
+    - **Cloud Migration Accelerator**: Modernize legacy infrastructure
+    - **Data Warehouse Modernization**: Break down data silos
+    - **Autonomous Agentic AI**: Replace manual processes with AI automation
+
+    **Hyper-automation Focus:**
+    - Map each competitor weakness to specific Agilisium accelerator
+    - Emphasize "Plug & Play" implementation approach
+    - Highlight acceleration of "Molecule to Market" timeline
+    - Show how Agilisium's approach enables Real-time Insights
+  expected_output: |-
+    A detailed accelerator mapping document containing:
+    - Point-by-point mapping of Agilisium NextGen DataOps accelerators against competitor gaps
+    - Specific tool recommendations (GenInsights, Data Vigor, Gene Inspector) for each weakness
+    - Hyper-automation opportunities to replace {competitor_name}'s manual processes
+    - "Plug & Play" implementation strategy for rapid deployment
+    - Value propositions focused on accelerating Molecule to Market journey
+    - Technical differentiation emphasizing Agilisium's Data Observability and Agentic AI capabilities
+  agent: principal_solutions_architect_life_sciences_data_innovation
+  context:
+  - validated_gap_analysis_infrastructure_service_delivery_assessment
+market_based_roi_calculation_displacement_scoring:
+  description: "Calculate displacement scores and ROI projections using only verified
+    market data and industry benchmarks. Base all calculations on documented evidence
+    and established methodologies.\n\n**Data Sources Required:**\n- Verified financial
+    data from target account research\n- Industry benchmark reports (Everest Group,
+    ISG, Gartner, etc.)\n- Documented case studies and client outcomes\n- Market performance
+    standards for Life Sciences organizations\n\n**Calculation Framework:**\n**Arena
+    Displacement Score:**\n- Legacy Infrastructure Impact (40%): Based on documented
+    gaps with measurable business impact\n- Market Readiness (30%): Using verified
+    strategic priorities and documented transformation initiatives  \n- Competitive
+    Advantage (30%): Based on published benchmarks and verified differentiators\n\n**ROI
+    Projections (Market-Based):**\n- Sales Effectiveness: Use industry benchmark data
+    for similar transformations\n- Operational Efficiency: Reference documented case
+    study outcomes\n- Time-to-Market: Apply established Life Sciences acceleration
+    metrics\n- Risk Assessment: Use historical success rates from credible sources\n\n**Validation
+    Requirements:**\n- All financial calculations must reference source data\n- Industry
+    benchmarks must cite specific reports and dates\n- Success probability calculations
+    must be based on documented case studies\n- When data is insufficient, provide
+    ranges with confidence intervals"
+  expected_output: |-
+    **MARKET-BASED DISPLACEMENT & ROI ANALYSIS**
+
+    **1. Arena Displacement Score (Verified Methodology)**
+    - Legacy Infrastructure Impact: Score with supporting evidence and calculation method
+    - Market Readiness: Score based on documented strategic initiatives and market pressures
+    - Competitive Advantage: Score using published benchmarks and verified differentiators
+    - **Final Displacement Score**: Calculated percentage with methodology transparency
+
+    **2. ROI Projections (Industry Benchmark-Based)**
+    - **Sales Effectiveness Improvement**: Percentage range with benchmark sources
+    - **Operational Efficiency Gains**: Metrics based on documented case studies
+    - **Time-to-Market Acceleration**: Months/years saved with industry reference points
+    - **Financial Impact Estimates**: Dollar amounts with calculation methodology and sources
+
+    **3. Market Benchmark Comparisons**
+    - Peer organization performance metrics (with sources)
+    - Industry standard adoption rates and timelines
+    - Competitive positioning analysis using verified data
+
+    **4. Risk Assessment (Evidence-Based)**
+    - Implementation success probability based on historical data
+    - Risk factors identified from documented case studies
+    - Mitigation strategies with proven track records
+
+    **5. Calculation Transparency**
+    - Complete methodology and formula documentation
+    - Source references for all data points and benchmarks
+    - Confidence levels and data quality assessment
+    - Sensitivity analysis showing impact of variable assumptions
+  agent: quantitative_data_analyst_market_benchmark_specialist
+  context:
+  - validated_gap_analysis_infrastructure_service_delivery_assessment
+generate_executive_displacement_strategy_10_slide_format:
+  description: "Structure the Payload: Format as UIOutput object for dashboard integration
+    with quantified hero metrics and \"Accelerating Scientific Innovation\" narrative
+    prominence.\n\n**10-Slide Executive Displacement Strategy:**\n1. **{target_account}
+    Current State Analysis** - Quantified legacy infrastructure metrics\n2. **Industry
+    Challenge Context** - Life Sciences market pressures and innovation demands  \n3.
+    **Stale Incumbent Signals** - Specific {competitor_name} performance gaps with
+    numbers\n4. **Competitive Gap Analysis** - Detailed breakdown of technical and
+    strategic limitations\n5. **Agilisium FDX Solution Overview** - NextGen DataOps
+    Platform introduction\n6. **Accelerator Portfolio Deep Dive** - Complete suite
+    (GenInsights, Data Vigor, Gene Inspector, Autonomous Agentic AI)\n7. **Quantified
+    Business Impact** - Disruption Score and comprehensive ROI projections\n8. **\"Accelerating
+    Scientific Innovation\" ROI** - Molecule-to-Market acceleration metrics\n9. **Implementation
+    Roadmap** - Phased deployment with milestones and timelines\n10. **Executive Decision
+    Framework** - Risk mitigation and success probability analysis\n\n**Enhanced Requirements:**\n-
+    Hero metrics must be quantified numbers, not descriptive phrases\n- \"Accelerating
+    Scientific Innovation\" theme woven throughout all 10 slides  \n- Complete accelerator
+    coverage including Gene Inspector for Omics\n- Prominent Everest Group/ISG recognition
+    positioning in multiple slides\n- Executive-ready format with premium FDX positioning"
+  expected_output: |-
+    **EXECUTIVE DISPLACEMENT STRATEGY (10-Slide Premium Format)**
+    Comprehensive presentation deck with:
+    - 10 slides with quantified hero metrics (specific numbers, not descriptions)
+    - "Accelerating Scientific Innovation" narrative prominently featured in each slide
+    - Complete Agilisium accelerator portfolio coverage (GenInsights, Data Vigor, Gene Inspector, Autonomous Agentic AI)
+    - Multiple references to Everest Group/ISG industry recognition for credibility
+    - Premium FDX positioning suitable for Life Sciences C-level executives
+    - Detailed implementation roadmap and risk assessment
+    - UIOutput object format for executive dashboard integration
+  agent: executive_communications_architect_fdx_standard
+  context:
+  - verified_intelligence_research_target_account_competitor_analysis
+  - validated_gap_analysis_infrastructure_service_delivery_assessment
+  - apply_the_agilisium_angle_map_proprietary_accelerators
+  - market_based_roi_calculation_displacement_scoring
+generate_comprehensive_10_page_executive_summary:
+  description: |-
+    Create a comprehensive 10-page executive summary that details all research findings, competitive intelligence analysis, and strategic recommendations. The executive summary must be a complete standalone document covering:
+
+    **Executive Summary Structure (10 Pages):**
+
+    **Pages 1-2: Strategic Overview & Key Findings**
+    - Comprehensive displacement opportunity assessment
+    - Executive summary of competitive gaps identified
+    - Strategic recommendations and implementation priorities
+    - Key financial metrics and ROI projections overview
+
+    **Pages 3-4: Target Account Deep Dive**
+    - Complete {target_account} organizational profile and analysis
+    - Current technology infrastructure assessment
+    - Strategic priorities, challenges, and transformation requirements
+    - Financial performance metrics and market positioning
+    - Organizational structure and key stakeholder mapping
+
+    **Pages 5-6: Competitive Gap Analysis & Incumbent Performance**
+    - Detailed analysis of {competitor_name} service delivery gaps
+    - Specific performance issues, delays, and quality problems
+    - Market benchmark comparisons and competitive positioning
+    - Quantified impact of current service limitations
+    - Industry benchmark comparisons and peer analysis
+
+    **Pages 7-8: Agilisium Solution Portfolio & Accelerator Mapping**
+    - Complete NextGen DataOps Platform overview
+    - Detailed accelerator portfolio analysis (GenInsights, Data Vigor, Gene Inspector, Autonomous Agentic AI)
+    - Point-by-point mapping of solutions to identified gaps
+    - Hyper-automation opportunities and "Plug & Play" implementation approach
+    - Technical differentiation and competitive advantages
+
+    **Pages 9-10: Business Case, ROI Analysis & Implementation Strategy**
+    - Comprehensive financial analysis and ROI calculations
+    - Market-based displacement scoring methodology and results
+    - Detailed implementation roadmap with phases, timelines, and milestones
+    - Risk assessment, mitigation strategies, and success probability analysis
+    - Executive decision framework and recommended next steps
+
+    **Formatting Requirements:**
+    - Professional executive document format with clear section headers
+    - Quantified metrics and specific data points throughout
+    - Source citations and data validation notes
+    - Charts, tables, and visual data representations described
+    - "Accelerating Scientific Innovation" theme integrated throughout
+    - Executive-ready language and strategic focus
+  expected_output: "**COMPREHENSIVE 10-PAGE EXECUTIVE SUMMARY**\n**Life Sciences Competitive
+    Displacement Strategy for {target_account}**\n\n**TABLE OF CONTENTS**\nExecutive
+    Overview & Strategic Recommendations...........p.1\nTarget Account Profile & Market
+    Analysis................p.3\nCompetitive Gap Assessment & Incumbent Performance......p.5\nAgilisium
+    Solution Portfolio & Accelerator Mapping.....p.7\nBusiness Case, ROI Analysis
+    & Implementation...........p.9\n\n---\n\n**PAGES 1-2: EXECUTIVE OVERVIEW & STRATEGIC
+    RECOMMENDATIONS**\n\n**Displacement Opportunity Assessment**\n[Comprehensive overview
+    of the competitive displacement opportunity with specific metrics, financial impact
+    projections, and strategic rationale]\n\n**Key Findings Summary**\n- Target Account
+    Strategic Position: [Detailed assessment with supporting metrics]\n- Incumbent
+    Service Gaps: [Quantified analysis of current provider limitations]\n- Market
+    Opportunity: [Specific financial and strategic metrics]\n- Competitive Advantages:
+    [Agilisium differentiation factors with quantified benefits]\n\n**Strategic Recommendations**\n1.
+    [Priority recommendation with supporting rationale and expected outcomes]\n2.
+    [Implementation approach with timeline and resource requirements]\n3. [Risk mitigation
+    strategies and success probability factors]\n\n**Executive Financial Summary**\n-
+    Displacement Score: [XX/100] with methodology explanation\n- ROI Projection: [$XX.XM]
+    over [XX months] with [XX%] confidence\n- Investment Required: [$XX.XM] with [XX
+    month] payback period\n- Market Opportunity: [Quantified market size and competitive
+    positioning]\n\n---\n\n**PAGES 3-4: TARGET ACCOUNT DEEP DIVE**\n\n**Organizational
+    Profile**\n[Complete analysis of {target_account} including company type, size,
+    revenue, organizational structure, and strategic focus areas with verified data
+    and sources]\n\n**Technology Infrastructure Assessment**\n[Detailed evaluation
+    of current systems, technology stack, integration challenges, and digital transformation
+    initiatives with specific metrics and documented gaps]\n\n**Strategic Priorities
+    & Market Pressures**\n[Analysis of business priorities, market challenges, regulatory
+    requirements, and competitive pressures specific to Life Sciences industry context]\n\n**Financial
+    Performance & Market Positioning**\n[Verified financial metrics, market share
+    data, competitive positioning analysis, and benchmark comparisons with credible
+    sources]\n\n---\n\n**PAGES 5-6: COMPETITIVE GAP ANALYSIS & INCUMBENT PERFORMANCE**\n\n**Service
+    Delivery Gap Analysis**\n[Comprehensive analysis of {competitor_name} performance
+    gaps including specific incidents, delays, quality issues, and quantified business
+    impact]\n\n**Technology & Process Limitations**\n[Detailed assessment of technology
+    constraints, manual processes, data integration challenges, and automation deficits
+    with specific examples and metrics]\n\n**Market Benchmark Analysis**\n[Comparative
+    analysis against industry standards, peer performance metrics, and competitive
+    positioning with credible benchmark sources and data]\n\n**Quantified Impact Assessment**\n[Financial
+    impact analysis of current service limitations including cost overruns, timeline
+    delays, opportunity costs, and competitive disadvantages]\n\n---\n\n**PAGES 7-8:
+    AGILISIUM SOLUTION PORTFOLIO & ACCELERATOR MAPPING**\n\n**NextGen DataOps Platform
+    Overview**\n[Comprehensive presentation of Agilisium's platform capabilities,
+    technical architecture, and competitive advantages with Everest Group/ISG recognition]\n\n**Accelerator
+    Portfolio Analysis**\n- GenInsights: [Detailed capabilities, use cases, and quantified
+    benefits for biomarker discovery and analytics]\n- Data Vigor: [Real-time observability
+    features, uptime metrics, and operational advantages]  \n- Gene Inspector: [Omics
+    data unification capabilities, timeline acceleration, and scientific impact]\n-
+    Autonomous Agentic AI: [Automation capabilities, process replacement potential,
+    and efficiency gains]\n\n**Gap-to-Solution Mapping**\n[Point-by-point mapping
+    of identified gaps to specific Agilisium accelerators with implementation approach
+    and expected outcomes]\n\n**Technical Differentiation Analysis**\n[Detailed comparison
+    of Agilisium capabilities vs. current provider and competitive alternatives with
+    specific technical and business advantages]\n\n---\n\n**PAGES 9-10: BUSINESS CASE,
+    ROI ANALYSIS & IMPLEMENTATION STRATEGY**\n\n**Financial Analysis & ROI Calculations**\n[Comprehensive
+    financial modeling including cost savings, revenue impact, investment requirements,
+    and ROI calculations with methodology, assumptions, and sensitivity analysis]\n\n**Displacement
+    Scoring Methodology**\n[Detailed explanation of scoring approach, component analysis,
+    benchmark comparisons, and final displacement score with confidence intervals]\n\n**Implementation
+    Roadmap**\n- Phase 1 (0-90 days): [Detailed activities, milestones, and deliverables]\n-
+    Phase 2 (90-180 days): [Core platform migration and integration activities]  \n-
+    Phase 3 (180-365 days): [Full deployment, optimization, and value realization]\n\n**Risk
+    Assessment & Mitigation**\n[Comprehensive risk analysis including technical, operational,
+    and business risks with specific mitigation strategies and contingency plans]\n\n**Executive
+    Decision Framework**\n[Strategic recommendations, decision criteria, success metrics,
+    and recommended next steps for executive consideration]\n\n**Success Probability
+    Analysis**\n[Evidence-based assessment of implementation success probability with
+    historical benchmarks, risk factors, and confidence levels]\n\n---\n\n**Document
+    Specifications:**\n- Total Length: 10 pages of substantive executive content\n-
+    Format: Professional business document with executive summary structure\n- Data
+    Requirements: All metrics, calculations, and claims must be verified and sourced\n-
+    Audience: C-level executives and senior decision makers\n- Purpose: Comprehensive
+    competitive displacement strategy and business case"
+  agent: data_export_formatting_specialist
+  context:
+  - verified_intelligence_research_target_account_competitor_analysis
+  - validated_gap_analysis_infrastructure_service_delivery_assessment
+  - apply_the_agilisium_angle_map_proprietary_accelerators
+  - market_based_roi_calculation_displacement_scoring
+generate_dashboard_metrics_kpis:
+  description: "Extract and structure all quantified metrics from the competitive
+    intelligence analysis into dashboard-ready format. Create KPIs, trend indicators,
+    and visualization data points including:\n\n**Key Metrics to Extract:**\n- Displacement
+    scores with breakdown components\n- ROI projections and financial impact metrics\n-
+    Gap analysis scores and priority rankings  \n- Market benchmark comparisons\n-
+    Competitive advantage indicators\n- Implementation timeline metrics\n- Success
+    probability indicators\n\n**Dashboard Format Requirements:**\n- JSON structure
+    with metric categories\n- Visualization type recommendations (charts, gauges,
+    scorecards)\n- Color coding and alert thresholds\n- Time-series data where applicable\n-
+    Comparative metrics (vs competitors, vs benchmarks)\n- Executive summary metrics
+    for C-level dashboards"
+  expected_output: |-
+    **DASHBOARD METRICS PACKAGE (JSON Format)**
+
+    ```json
+    {
+      "executive_summary": {
+        "displacement_score": {"value": XX, "trend": "up/down/stable", "benchmark": XX},
+        "roi_projection": {"value": "XX%", "timeline": "XX months", "confidence": "XX%"},
+        "priority_gaps": {"count": X, "high_impact": X, "addressable": X},
+        "competitive_advantage": {"score": XX, "category": "strong/moderate/weak"}
+      },
+      "detailed_metrics": {
+        "gap_analysis": [
+          {"category": "Infrastructure", "score": XX, "impact": "high/medium/low", "addressable": true/false},
+          {"category": "Service Delivery", "score": XX, "impact": "high/medium/low", "addressable": true/false}
+        ],
+        "market_benchmarks": [
+          {"metric": "Performance vs Peers", "value": XX, "percentile": XX, "trend": "improving/declining"},
+          {"metric": "Technology Adoption", "value": XX, "industry_average": XX, "gap": XX}
+        ],
+        "financial_projections": {
+          "cost_savings": {"annual": "$XX", "three_year": "$XX", "sources": ["efficiency", "automation"]},
+          "revenue_impact": {"potential": "$XX", "timeline": "XX months", "probability": "XX%"},
+          "investment_required": {"initial": "$XX", "ongoing": "$XX", "payback_period": "XX months"}
+        }
+      },
+      "visualization_config": {
+        "charts": ["displacement_gauge", "roi_timeline", "gap_heatmap", "benchmark_radar"],
+        "alerts": [{"metric": "displacement_score", "threshold": 75, "action": "highlight"}],
+        "filters": ["time_period", "metric_category", "confidence_level"]
+      }
+    }
+    ```
+  agent: dashboard_metrics_kpi_generator
+  context:
+  - generate_executive_displacement_strategy_10_slide_format
+  - market_based_roi_calculation_displacement_scoring
+create_slide_deck_export_package:
+  description: "Transform the executive displacement strategy into PowerPoint-ready
+    content blocks with structured data for easy slide creation. Format each of the
+    10 slides with:\n\n**Slide Structure Requirements:**\n- Slide title and subtitle\n-
+    Key message/headline\n- Bullet points with supporting data\n- Chart/visual recommendations
+    \ \n- Speaker notes with detailed explanations\n- Data sources and citations\n\n**Content
+    Formatting:**\n- Executive-friendly language with quantified metrics\n- Visual
+    hierarchy (headlines, subheadings, bullets)\n- Chart data in table format for
+    easy visualization\n- Consistent messaging around \"Accelerating Scientific Innovation\"\n-
+    Clear call-to-actions for each slide"
+  expected_output: "**POWERPOINT EXPORT PACKAGE**\n\n**Slide 1: {target_account} Current
+    State Analysis**\n- Title: \"Current Infrastructure & Performance Baseline\"\n-
+    Headline: \"Legacy systems creating [X]% efficiency gap vs industry leaders\"\n-
+    Key Points:\n  • Company profile: [specific metrics with sources]\n  • Technology
+    infrastructure: [documented limitations]\n  • Performance gaps: [quantified vs
+    benchmarks]\n- Chart Data: [Infrastructure assessment scores in table format]\n-
+    Speaker Notes: [Detailed explanation of current state findings]\n\n**Slide 2:
+    Industry Challenge Context**\n- Title: \"Life Sciences Digital Transformation
+    Imperative\" \n- Headline: \"Market pressure demands [X]% faster molecule-to-market
+    timeline\"\n- Key Points:\n  • Industry benchmarks: [specific statistics]\n  •
+    Transformation requirements: [documented needs]\n  • Competitive landscape: [market
+    positioning data]\n- Chart Data: [Industry benchmark comparison tables]\n- Speaker
+    Notes: [Market context and urgency explanation]\n\n[Continue for all 10 slides
+    with consistent structure]\n\n**Additional Assets:**\n- Executive summary one-pager\n-
+    Appendix slides with detailed data\n- Source citation list\n- Recommended slide
+    animations and transitions\n- Brand-compliant color scheme suggestions"
+  agent: data_export_formatting_specialist
+  context:
+  - generate_executive_displacement_strategy_10_slide_format
+master_export_package_compilation:
+  description: "Compile and organize all export formats with the 10-page Executive
+    Summary as the primary deliverable. Ensure all outputs are cross-referenced and
+    consistent:\n\n**Primary Deliverable - 10-Page Executive Summary:**\n- Comprehensive
+    strategic document covering all research findings\n- Complete competitive intelligence
+    analysis and business case\n- Executive-ready format with quantified metrics and
+    strategic recommendations\n- Integrated \"Accelerating Scientific Innovation\"
+    narrative throughout\n\n**Additional Package Components:**\n- Dashboard metrics
+    JSON with complete KPIs for real-time tracking\n- PowerPoint-ready slide content
+    with speaker notes for presentations  \n- Technical export specifications and
+    integration instructions\n- Quality assurance checklist for all formats\n\n**Integration
+    Requirements:**\n- Verify metric consistency across executive summary and dashboard
+    formats\n- Ensure data integrity between all export components\n- Provide format-specific
+    optimization recommendations\n- Include technical specifications for each export
+    type\n- Cross-reference all financial metrics and strategic recommendations"
+  expected_output: "**MASTER EXPORT PACKAGE (Complete Deliverable)**\n\n**PRIMARY
+    DELIVERABLE: 10-PAGE EXECUTIVE SUMMARY**\n[Complete comprehensive executive summary
+    as detailed in the Generate Comprehensive 10-Page Executive Summary task - this
+    is the main deliverable covering all research findings, competitive analysis,
+    and strategic recommendations in executive-ready format]\n\n**SUPPORTING EXPORT
+    COMPONENTS:**\n\n**1. DASHBOARD METRICS EXPORT**\n[Complete JSON structure with
+    all KPIs, metrics, and visualization configurations for real-time tracking and
+    monitoring]\n\n**2. POWERPOINT EXPORT PACKAGE** \n[All 10 slides with titles,
+    content blocks, chart data, and speaker notes for stakeholder presentations]\n\n**3.
+    EXPORT SPECIFICATIONS**\n- Technical requirements for each format\n- Data validation
+    checklist ensuring consistency with executive summary\n- Integration instructions
+    for external tools and systems\n- Format-specific optimization recommendations\n-
+    Quality assurance verification steps\n\n**4. CROSS-FORMAT CONSISTENCY VERIFICATION**\n-
+    Executive summary metrics alignment with dashboard JSON\n- PowerPoint slide data
+    consistency with executive summary findings  \n- Key metric alignment confirmation
+    across all formats\n- Usage recommendations for each format based on audience
+    and purpose\n\n**5. IMPLEMENTATION GUIDANCE**\n- Executive summary distribution
+    and presentation recommendations\n- Dashboard deployment and real-time monitoring
+    setup\n- PowerPoint presentation customization for different stakeholder groups\n-
+    Next steps and implementation guidance for executive decision making\n\n**PACKAGE
+    SUMMARY:**\n- Primary Focus: 10-page executive summary as comprehensive strategic
+    document\n- Supporting Components: Dashboard metrics and presentation materials\n-
+    Audience: C-level executives and senior decision makers\n- Purpose: Complete competitive
+    displacement strategy with implementation roadmap"
+  agent: data_export_formatting_specialist
+  context:
+  - generate_dashboard_metrics_kpis
+  - create_slide_deck_export_package
+  - generate_comprehensive_10_page_executive_summary

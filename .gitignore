@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+ENV/
+env/
+build/
+dist/
+*.egg-info/
+
+# Streamlit
+.streamlit/config.toml
+.streamlit/credentials.toml
+
+# Environment / Secrets
+.env
+.flaskenv
+
+# Data & OS
+data/intelligence_bucket.csv
+.DS_Store
+Thumbs.db
+
+# Project Specific
+output/
+*.log
+*.pdf
+*.pptx
