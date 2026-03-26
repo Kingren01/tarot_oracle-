@@ -14,8 +14,8 @@ LIGHT = {
     "accent":        "#C9A84C",       # tarot gold
     "accent_dark":   "#A8872E",       # burnished gold
     "success":       "#2D9B5A",       # emerald fate
-    "warning":       "#D4882A",       # amber oracle
-    "danger":        "#A83240",       # crimson omen
+    "warning":       "#D4882A",       # amber warning
+    "danger":        "#A83240",       # crimson alert
     "sidebar_bg":    "#2A1B3D",       # midnight purple
     "sidebar_text":  "#F5F0E8",       # parchment on dark
     "tab_list_bg":   "#EDE8DC",
@@ -482,10 +482,10 @@ def render_score_pill(risk_level):
     }
     cls = mapping.get(risk_level, "arcana-low")
     labels = {
-        "Critical": "⚡ Major Arcana",
-        "High":     "✦ High Arcana",
-        "Medium":   "◇ Minor Arcana",
-        "Low":      "○ The Fool",
+        "Critical": "⚡ Critical Priority",
+        "High":     "✦ High Priority",
+        "Medium":   "◇ Standard Priority",
+        "Low":      "○ Low Priority",
     }
     label = labels.get(risk_level, risk_level)
     return f'<span class="{cls}">{label}</span>'

@@ -36,15 +36,14 @@ def render():
                 font-weight: 800;
                 color: #F0EAD6;
                 letter-spacing: 0.04em;
-            ">The Oracle</div>
+            ">Tarot Cards</div>
             <div style="
                 font-family: 'Cormorant Garamond', serif;
                 font-size: 15px;
                 color: #B8A9CC;
                 margin-top: 8px;
                 font-style: italic;
-            ">
-                Competitive Intelligence &amp; Displacement Divination
+                Competitive Intelligence &amp; Displacement Analysis
             </div>
             <div style="
                 font-family: 'Cinzel', serif;
@@ -84,7 +83,7 @@ def render():
             font-weight: 600;
             color: #C9A84C;
             text-transform: uppercase;
-        ">Enter the Oracle</p>
+        ">Access the Intelligence Deck</p>
         """, unsafe_allow_html=True)
 
         email = st.text_input("Email address", placeholder="admin@agilisium.com", label_visibility="collapsed")
@@ -92,7 +91,7 @@ def render():
         password = st.text_input("Password", type="password", placeholder="Password", label_visibility="collapsed")
         st.markdown("<div style='height: 20px'></div>", unsafe_allow_html=True)
 
-        if st.button("Invoke Access", use_container_width=True):
+        if st.button("Login", use_container_width=True):
             if email == "admin@agilisium.com" and password == "Agilis@2025":
                 st.session_state["authenticated"] = True
                 st.session_state["user_email"] = email
@@ -106,7 +105,7 @@ def render():
         st.markdown("""
         <p style='text-align: center; color: #6B5B7B; font-size: 11px; margin-top: 28px;
                    letter-spacing: 0.02em; font-family: Cormorant Garamond, serif;'>
-            © 2025 Agilisium AI · The Oracle · Confidential
+            © 2025 Agilisium AI · Tarot Cards · Confidential
         </p>
         """, unsafe_allow_html=True)
 

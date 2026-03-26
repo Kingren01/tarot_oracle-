@@ -9,7 +9,7 @@ sys.path.append(os.path.join(os.path.dirname(__file__), "src"))
 load_dotenv()
 
 st.set_page_config(
-    page_title="The Oracle — Agilisium CI",
+    page_title="Tarot Cards — Agilisium CI",
     page_icon="🔮",
     layout="wide",
     initial_sidebar_state="expanded"
@@ -19,7 +19,7 @@ if not os.getenv("OPENAI_API_KEY") and not os.getenv("OPENROUTER_API_KEY"):
     st.error("""
     ⚠️ **API Configuration Missing**
     
-    The Oracle requires an API key to function. Please:
+    Tarot Cards requires an API key to function. Please:
     1. **Local**: Add `OPENROUTER_API_KEY` or `OPENAI_API_KEY` to your `.env` file.
     2. **Streamlit Cloud**: Add your keys under **Settings > Secrets** in the Streamlit dashboard.
     """)
@@ -35,7 +35,7 @@ def render_sidebar():
     t = get_theme()
 
     with st.sidebar:
-        # Oracle branding header
+        # Tarot branding header
         st.markdown(f"""
         <div style="padding: 16px 8px 24px 8px;">
             <div style="display:flex; align-items:center; gap: 12px; margin-bottom: 4px;">
@@ -49,7 +49,7 @@ def render_sidebar():
                     box-shadow: 0 4px 16px rgba(201,168,76,0.3);
                 ">🔮</div>
                 <div>
-                    <div style="font-weight:800; font-size:16px; color:{t['sidebar_text']}; line-height:1.1; font-family:'Cinzel',serif;">The Oracle</div>
+                    <div style="font-weight:800; font-size:16px; color:{t['sidebar_text']}; line-height:1.1; font-family:'Cinzel',serif;">Tarot Cards</div>
                     <div style="font-size:10px; color:#C9A84C; letter-spacing:0.08em; font-family:'Cinzel',serif;">AGILISIUM CI v3.0</div>
                 </div>
             </div>
@@ -67,8 +67,8 @@ def render_sidebar():
                 st.session_state["page"] = page_id
                 st.rerun()
 
-        nav_btn("The Spread", "dashboard", "🎴")
-        nav_btn("The Reading", "displacement_detail", "✦")
+        nav_btn("Research Index", "dashboard", "🎴")
+        nav_btn("Research Details", "displacement_detail", "✦")
 
         st.markdown("<div style='height: 8px'></div>", unsafe_allow_html=True)
         st.button("Analytics  ›", use_container_width=True, disabled=True)

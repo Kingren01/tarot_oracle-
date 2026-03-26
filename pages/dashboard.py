@@ -18,9 +18,9 @@ def render():
     # ── Page header ─────────────────────────────────────────────────────
     st.markdown(f"""
     <div style="margin-bottom: 36px;">
-        <div class='oracle-label'>🔮 THE ORACLE'S SPREAD</div>
-        <div class='oracle-title' style='color:{t["text_primary"]}'>Competitive Displacement</div>
-        <div class='oracle-subtitle' style='color:{t["text_secondary"]}'>Invoke the agents. Read the cards. Displace the incumbent.</div>
+        <div class='oracle-label'>🔮 TAROT CARDS DASHBOARD</div>
+        <div class='oracle-title' style='color:{t["text_primary"]}'>Market Intelligence</div>
+        <div class='oracle-subtitle' style='color:{t["text_secondary"]}'>Conduct research. Review the cards. Displace the incumbent.</div>
     </div>
     """, unsafe_allow_html=True)
 
@@ -34,10 +34,10 @@ def render():
         high = sum(1 for r in saved_records if 60 <= float(r["score"]) < 80)
 
         k1, k2, k3, k4 = st.columns(4)
-        k1.metric("Total Readings", str(total))
-        k2.metric("Avg Arcana Score", f"{avg_score:.1f}")
-        k3.metric("⚡ Major Arcana", str(critical))
-        k4.metric("✦ High Arcana", str(high))
+        k1.metric("Total Accounts", str(total))
+        k2.metric("Avg Displacement Score", f"{avg_score:.1f}")
+        k3.metric("⚡ Critical Priority", str(critical))
+        k4.metric("✦ High Priority", str(high))
 
         st.markdown("<div style='height: 12px'></div>", unsafe_allow_html=True)
 
@@ -46,10 +46,10 @@ def render():
     st.markdown(f"""
     <div style="margin-bottom: 20px;">
         <div style="font-size:18px; font-weight:700; color:{t["accent"]}; font-family:'Cinzel',serif;">
-            ✦ Invoke a New Reading
+            ✦ Start New Research
         </div>
         <div style="font-size:14px; color:{t["text_secondary"]}; margin-top:6px; font-family:'Cormorant Garamond',serif; font-style:italic;">
-            Channel the 7-agent oracle to divine a full displacement strategy and 10-page executive prophecy.
+            Activate the AI research agents to generate a full displacement strategy and executive report.
         </div>
     </div>
     """, unsafe_allow_html=True)
@@ -66,9 +66,9 @@ def render():
 
     st.markdown("<div style='height: 8px'></div>", unsafe_allow_html=True)
 
-    if st.button("Invoke the Reading →", use_container_width=True):
+    if st.button("Generate Intelligence Report →", use_container_width=True):
         if target_account and competitor_name:
-            with st.spinner("The Oracle's agents are channeling — verified research · gap analysis · solution mapping…"):
+            with st.spinner("AI agents are conducting research — verifying competitive data & solution mapping…"):
                 try:
                     inputs = {"target_account": target_account, "competitor_name": competitor_name}
                     result = LifeSciencesCompetitiveIntelligenceMultiFormatExportAutomationCrew().crew().kickoff(inputs=inputs)
@@ -92,10 +92,10 @@ def render():
                     st.session_state["page"] = "displacement_detail"
                     st.rerun()
                 except Exception as e:
-                    st.error(f"The Oracle's vision was disrupted: {e}")
+                    st.error(f"Research process interrupted: {e}")
                     print(traceback.format_exc())
         else:
-            st.warning("The Oracle requires both a target and an incumbent to begin the reading.")
+            st.warning("Please provide both a target account and an incumbent to begin research.")
 
     st.markdown("</div>", unsafe_allow_html=True)  # close tarot-card
 
@@ -104,10 +104,10 @@ def render():
     st.markdown(f"""
     <div style="margin-bottom: 16px;">
         <div style="font-size:22px; font-weight:800; color:{t["accent"]}; font-family:'Cinzel',serif; letter-spacing:0.02em;">
-            The Spread
+            Market Research Index
         </div>
         <div style="font-size:14px; color:{t["text_secondary"]}; margin-top:6px; font-family:'Cormorant Garamond',serif; font-style:italic;">
-            Past readings ranked by Arcana Score — highest impact first.
+            Past research ranked by Displacement Score — highest priority first.
         </div>
     </div>
     """, unsafe_allow_html=True)
@@ -115,7 +115,7 @@ def render():
     if not saved_records:
         st.markdown(f"""
         <div style="background:{t["surface"]}; border:1px dashed {t["accent"]}44; border-radius:12px; padding:48px; text-align:center; color:{t["text_muted"]}; font-size:15px; font-family:'Cormorant Garamond',serif; font-style:italic;">
-            No readings have been performed yet. Invoke your first reading above to reveal The Spread.
+            No research reports have been generated yet. Start your first research above to populate the index.
         </div>
         """, unsafe_allow_html=True)
         return
@@ -132,7 +132,7 @@ def render():
         font-family: 'Cinzel', serif;
     ">
         <div>Account</div><div>Incumbent</div><div>Industry</div>
-        <div>Contract Value</div><div>Arcana</div><div></div>
+        <div>Contract Value</div><div>Priority</div><div></div>
     </div>
     <hr style="border:none; border-top:1px solid {t['accent']}33; margin: 0 0 4px 0;">
     """, unsafe_allow_html=True)
@@ -153,7 +153,7 @@ def render():
         cols[4].markdown(render_score_pill(risk), unsafe_allow_html=True)
 
         with cols[5]:
-            if st.button("Read →", key=f"btn_view_{safe_key}_{i}"):
+            if st.button("Review Details →", key=f"btn_view_{safe_key}_{i}"):
                 output = get_record_by_name(row["account_name"])
                 st.session_state["crewai_output"] = output
                 st.session_state["selected_account"] = row.to_dict()
