@@ -1,15 +1,9 @@
 competitors = [
-    {"rank": 1, "name": "Accenture", "accounts": 12, "score": 87, "risk": "Critical"},
-    {"rank": 2, "name": "Deloitte LS", "accounts": 9, "score": 74, "risk": "High"},
-    {"rank": 3, "name": "Wipro", "accounts": 7, "score": 61, "risk": "High"},
-    {"rank": 4, "name": "Infosys", "accounts": 5, "score": 48, "risk": "Medium"},
-    {"rank": 5, "name": "TCS", "accounts": 3, "score": 33, "risk": "Low"},
+    {"rank": 1, "name": "Deloitte LS", "accounts": 9, "score": 74, "risk": "High"},
 ]
 
 accounts = [
-    {"name": "GlobalBank Corp", "incumbent": "Accenture", "industry": "BFSI", "value": "$4.2M", "score": 91},
     {"name": "MedLife Systems", "incumbent": "Deloitte LS", "industry": "Healthcare", "value": "$2.8M", "score": 83},
-    {"name": "RetailMax Inc", "incumbent": "Accenture", "industry": "Retail", "value": "$1.5M", "score": 78},
 ]
 
 # ─── Full 10-Slide + Rich Dashboard Mock ───────────────────────────────
